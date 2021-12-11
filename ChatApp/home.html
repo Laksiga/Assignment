@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online chat application</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>To use on your<br>Computer<span>Lux Chat</span></h2>
+                <p>
+                     It basically consists of people or a group of individuals 
+                     who exchange messages on the internet on a regular basis.
+
+                </p>
+                <a href="index.php">signup</a>
+                <a href="login.php">login</a>
+            </div>
+       
+        <div class="imgBox">
+            <img src="imge1.png" class="img">
+        </div>
+    </div>
+   
+    <ul class="thumb">
+        <li><img src="img1.png" onclick="imgSlider('imge1.png');changeCircleColor('#red')"></li>
+        <li><img src="img3.png" onclick="imgSlider('imge3.png');changeCircleColor('#black')"></li>
+        <li><img src="img2.png" onclick="imgSlider('imge2.png');changeCircleColor('#blue')"></li>
+        <li><img src="img4.png" onclick="imgSlider('imge4.png');changeCircleColor('#green')"></li>
+    </ul>
+  <!--
+    <ul class="sci">
+        <li><a href="#"><img src="facebook.png"></a></li>
+        <li><a href="#"><img src="twitter.png"></a></li>
+        <li><a href="#"><img src="instagram.png"></a></li>
+        <li><a href="#"><img src="linkedin.png"></a></li>
+    </ul>-->
+    </section>
+    <script type="text/javascript" >
+        function imgSlider(anything){
+            document.querySelector('.img').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.section{
+    width: 100%;
+
+}
+.section .container{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+.container .title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.container .title h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #ebece1;
+}
+.container .title h1::after{
+    content: '';
+    height: 5px;
+    width: 100%;
+    background-color: #063844;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+.content{
+    float: left;
+    width: 55%;
+
+}
+.image-section{
+    float: right;
+    width: 40%;
+
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content .article h3{
+    color: darkgray;
+    font-size: 17px;
+}
+.content .article p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(165, 164, 164);
+}
+.content .article .button{
+    margin-top: 50px;
+}
+.content .article .button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #03262c;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+
+}
+.container .article .button :hover{
+    color: #FFF;
+    background-color: #f28f92;
+    transition: 1s ease;
+
+}
+
+
+/*our team section*/
+
+body{
+    background-color: #0a6363;
+}
+.container-team{
+    margin: 20px 40px;
+    color: cornsilk;
+}
+.heading{
+    font-size: 60px;
+    color: rgb(230, 233, 215);
+    text-align: center;
+}
+.heading span{
+    font-style: italic;
+    font-size: 30px;
+}
+.profiles{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80px;
+}
+.profile{
+    flex-basis: 260px;
+}
+.profile .profile-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+}
+.profile:hover .profile-img{
+    filter: grayscale(0);
+}
+.user-name{
+    margin-top: 30px;
+    font-size: 35px;
+    color: #eff7f5;
+}
+.profile h5{
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #ccc;
+}
+.profile p{
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+}
+/*footer section*/
+footer{
+   
+    width: 100%;
+    position: absolute;
+    bottom: -150%;
+    background: linear-gradient(to right, #3a4269, #ffffff);
+    color: rgb(15, 1, 1);
+    padding: 60px 0 20px;
+    border-top-left-radius: 150px;
+    font-size: 13px;
+    line-height: 10px;
+    
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25px;
+    padding: 10px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid rgb(5, 5, 5);
+    margin: 2opx 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(3, 0, 0);
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: 1px space-between;
+    border-bottom: 1px solid rgb(7, 7, 7);
+    margin-bottom: 50px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: rgb(8, 8, 8);
+    border: 0;
+    outline: none;
+}
+form button{
+    font-size: 16px;
+    color: rgb(2, 2, 2);
+}
